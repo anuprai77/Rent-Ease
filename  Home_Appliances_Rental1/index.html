@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentEase - Home Appliances Rental</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.png" alt="RentEase Logo">
+                <span>RentEase</span>
+            </a>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search for appliances...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="nav-links">
+                <div class="dropdown">
+                    <button class="dropbtn">Categories <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Appliances</a>
+                        <a href="#">Furniture</a>
+                        <a href="#">Electronics</a>
+                        <a href="#">Fitness</a>
+                        <a href="#">Baby & Kids</a>
+                    </div>
+                </div>
+
+                <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                 <span class="cart-count">0</span>
+                </a>
+                
+                <div class="auth-buttons">
+                    <a href="#" class="login-btn">Login</a>
+                    <a href="#" class="signup-btn">Sign Up</a>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="container">
+            <h1>Rent Premium Home Appliances Hassle-Free</h1>
+            <p>Flexible rental plans starting at just Rs.499/month</p>
+            <a href="rentnow.html" class="btn">Rent Now</a>
+        </div>
+    </section>   
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="images/1.svg" alt="Appliances">
+                    <h3>Appliances</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/2.svg" alt="Furniture">
+                    <h3>Furniture</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/3.svg" alt="Electronics">
+                    <h3>Electronics</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/4.svg" alt="Fitness">
+                    <h3>Fitness</h3>
+                </div>
+                <div class="category-card">
+                    <img src="images/3.svg" alt="Baby & Kids">
+                    <h3>Baby & Kids</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="appliances">Appliances</button>
+                <button class="filter-btn" data-filter="furniture">Furniture</button>
+                <button class="filter-btn" data-filter="electronics">Electronics</button>
+            </div>
+            <div class="product-grid">
+                <div class="product-card" data-category="appliances">
+                    <div class="product-image">
+                        <img src="images/2.svg" alt="Washing Machine">
+                        <span class="product-category">Appliances</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Washing Machine</h3>
+                        <p>Energy-efficient 7kg front-load washing machine.</p>
+                        <div class="product-meta">
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(24)</span>
+                            </div>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">Rs.799/month</span>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <a href="#" class="see-more">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="furniture">
+                    <div class="product-image">
+                        <img src="images/sofa.jpg" alt="Sofa Set">
+                        <span class="product-category">Furniture</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>Modern Sofa Set</h3>
+                        <p>Comfortable 3-seater sofa with premium fabric.</p>
+                        <div class="product-meta">
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(18)</span>
+                            </div>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">Rs.1499/month</span>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <a href="#" class="see-more">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="images/tv.jpg" alt="Smart TV">
+                        <span class="product-category">Electronics</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>4K Smart TV</h3>
+                        <p>43-inch LED TV with streaming capabilities.</p>
+                        <div class="product-meta">
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(30)</span>
+                            </div>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">Rs.999/month</span>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <a href="#" class="see-more">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="images/tv.jpg" alt="Smart TV">
+                        <span class="product-category">Electronics</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>4K Smart TV</h3>
+                        <p>43-inch LED TV with streaming capabilities.</p>
+                        <div class="product-meta">
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(30)</span>
+                            </div>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">Rs.999/month</span>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <a href="#" class="see-more">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="images/tv.jpg" alt="Smart TV">
+                        <span class="product-category">Electronics</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>4K Smart TV</h3>
+                        <p>43-inch LED TV with streaming capabilities.</p>
+                        <div class="product-meta">
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(30)</span>
+                            </div>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">Rs.999/month</span>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <a href="#" class="see-more">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="product-card" data-category="electronics">
+                    <div class="product-image">
+                        <img src="images/tv.jpg" alt="Smart TV">
+                        <span class="product-category">Electronics</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>4K Smart TV</h3>
+                        <p>43-inch LED TV with streaming capabilities.</p>
+                        <div class="product-meta">
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(30)</span>
+                            </div>
+                            <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                        </div>
+                        <div class="product-price">
+                            <span class="price">Rs.999/month</span>
+                            <button class="add-to-cart-btn">Add to Cart</button>
+                        </div>
+                        <a href="#" class="see-more">See More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rental Calculator -->
+    <section class="rental-calculator">
+        <div class="container">
+            <h2>Plan Your Rental</h2>
+            <div class="calculator-form">
+                <div class="form-group">
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date">
+                </div>
+                <div class="form-group">
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date">
+                </div>
+                <button id="calculate-btn" class="btn">Calculate</button>
+            </div>
+            <div class="rental-timer hidden">
+                <h3>Time Remaining:</h3>
+                <div id="countdown-timer">
+                    <span id="days">00</span> days 
+                    <span id="hours">00</span> hours 
+                    <span id="minutes">00</span> minutes
+                </div>
+                <div id="rental-ended" class="hidden">
+                    <p class="alert">Your rental period has ended. Please return or renew your appliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="carousel-wrapper">
+                <div class="testimonial-carousel">
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Renting from RentEase was so convenient. The washing machine arrived in perfect condition and the process was seamless."</p>
+                        <div class="customer">
+                            <strong>Himal Chaudhary</strong>, Dharan
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"Great service! I rented a refrigerator for 6 months and had no issues. Will definitely use again."</p>
+                        <div class="customer">
+                            <strong>SujaL Sawa Limbu</strong>, Itahari
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect solution for my temporary work assignment. Rented furniture and appliances for my 1-year stay."</p>
+                        <div class="customer">
+                            <strong>Sanjal Subaa</strong>, Birtamod
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect solution for my temporary work assignment. Rented furniture and appliances for my 1-year stay."</p>
+                        <div class="customer">
+                            <strong>Sanjal Subaa</strong>, Birtamod
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect solution for my temporary work assignment. Rented furniture and appliances for my 1-year stay."</p>
+                        <div class="customer">
+                            <strong>Sanjal Subaa</strong>, Birtamod
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect solution for my temporary work assignment. Rented furniture and appliances for my 1-year stay."</p>
+                        <div class="customer">
+                            <strong>Sanjal Subaa</strong>, Birtamod
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect solution for my temporary work assignment. Rented furniture and appliances for my 1-year stay."</p>
+                        <div class="customer">
+                            <strong>Sanjal Subaa</strong>, Birtamod
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect solution for my temporary work assignment. Rented furniture and appliances for my 1-year stay."</p>
+                        <div class="customer">
+                            <strong>Sanjal Subaa</strong>, Birtamod
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect solution for my temporary work assignment. Rented furniture and appliances for my 1-year stay."</p>
+                        <div class="customer">
+                            <strong>Sanjal Subaa</strong>, Birtamod
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect solution for my temporary work assignment. Rented furniture and appliances for my 1-year stay."</p>
+                        <div class="customer">
+                            <strong>Sanjal Subaa</strong>, Birtamod
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect solution for my temporary work assignment. Rented furniture and appliances for my 1-year stay."</p>
+                        <div class="customer">
+                            <strong>Sanjal Subaa</strong>, Birtamod
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect solution for my temporary work assignment. Rented furniture and appliances for my 1-year stay."</p>
+                        <div class="customer">
+                            <strong>Sanjal Subaa</strong>, Birtamod
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect solution for my temporary work assignment. Rented furniture and appliances for my 1-year stay."</p>
+                        <div class="customer">
+                            <strong>Sanjal Subaa</strong>, Birtamod
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Perfect solution for my temporary work assignment. Rented furniture and appliances for my 1-year stay."</p>
+                        <div class="customer">
+                            <strong>Sanjal Subaa</strong>, Birtamod
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>RentEase</h3>
+                    <p>Making home living easier with flexible rental solutions for all your appliance needs.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Categories</a></li>
+                        <li><a href="">Featured</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Download Our App</h3>
+                    <div class="app-download">
+                        <a href="#"><img src="images/google-play.png" alt="Google Play"></a>
+                        <a href="#"><img src="images/app-store.png" alt="App Store"></a>
+                    </div>
+                    <div class="newsletter">
+                        <h4>Subscribe to Newsletter</h4>
+                        <form>
+                            <input type="email" placeholder="Your email">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 RentEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

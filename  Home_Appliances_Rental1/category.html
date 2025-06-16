@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Category - RentEase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 id="category-title">Category</h1>
+    <div id="product-list" class="product-grid"></div>
+
+    <script>
+        // Sample data - normally this comes from a database or API
+        const products = [
+            { category: 'furniture', name: 'Modern Sofa Set', img: 'images/sofa.jpg', price: 'Rs.1499/month' },
+            { category: 'furniture', name: 'Dining Table Set', img: 'images/dining.jpg', price: 'Rs.999/month' },
+            { category: 'electronics', name: '4K Smart TV', img: 'images/tv.jpg', price: 'Rs.999/month' },
+            { category: 'appliances', name: 'Washing Machine', img: 'images/washing-machine.jpg', price: 'Rs.799/month' },
+        ];
+
+        // Get category from URL
+        const params = new URLSearchParams(window.location.search);
+        const category = params.get('category');
+        document.getElementById('category-title').textContent = category.charAt(0).toUpperCase() + category.slice(1);
+
+        // Filter and display products
+        const list = document.getElementById('product-list');
+        const filtered = products.filter(p => p.category === category);
+        filtered.forEach(p => {
+            const card = document.createElement('div');
+            card.className = 'product-card';
+            card.innerHTML = `
+                <img src="${p.img}" alt="${p.name}">
+                <h3>${p.name}</h3>
+                <p>${p.price}</p>
+            `;
+            list.appendChild(card);
+        });
+    </script>
+</body>
+</html>
